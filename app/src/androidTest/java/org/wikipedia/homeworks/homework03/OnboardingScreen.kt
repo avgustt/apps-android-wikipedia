@@ -1,13 +1,18 @@
 package org.wikipedia.homeworks.homework03
 
+import android.widget.ImageView
+import androidx.appcompat.widget.AppCompatImageView
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textview.MaterialTextView
+
 val wikiLogo = listOf(
-    AppCompatImageView::class.java,  //Класс
+    ImageView::class.java,  //Класс
     "main_toolbar_wordmark", //id
     null, //нет текста
 )
 
 val searchBottom = listOf(
-    AppCompatImageView::class.java,  //Класс
+    ImageView::class.java,  //Класс
     null,  //Нет ID
     null, //нет текста
 )
