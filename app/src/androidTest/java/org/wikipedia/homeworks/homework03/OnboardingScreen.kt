@@ -1,7 +1,6 @@
 package org.wikipedia.homeworks.homework03
 
 import android.widget.ImageView
-import androidx.appcompat.widget.AppCompatImageView
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textview.MaterialTextView
 
