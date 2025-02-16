@@ -16,6 +16,8 @@ val searchBottom = listOf(
     null, //нет текста
 )
 
+
+
 val descriptionWikipedia = listOf(
     MaterialTextView::class.java,   //Класс
     "view_announcement_text", //id
