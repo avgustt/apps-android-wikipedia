@@ -142,7 +142,6 @@ class MatcherShapeBuilder() {
     fun buildAnyMatchers() = anyOf(listOfMatchers)
 }
 
-
 fun main() {
     val shapes = listOf(
         Shape(10f, 3, Color.RED), Shape(5f, 4, Color.BLUE), Shape(7f, 2, Color.GREEN),
