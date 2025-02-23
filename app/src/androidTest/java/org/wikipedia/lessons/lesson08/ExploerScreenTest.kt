@@ -1,4 +1,4 @@
-package org.wikipedia.homeworks.homework08
+package org.wikipedia.lessons.lesson08
 
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
@@ -17,8 +17,8 @@ class ExploreScreenTest : TestCase() {
     @Test
     fun simpleTest() {
         run {
-            step("Проверка Проверка"){
-                ExploreScreen.items.isDisplayed()
+            step("Проверка отображение тулбара"){
+                ExploreScreen.toolbarTitle.isDisplayed()
             }
         }
     }
