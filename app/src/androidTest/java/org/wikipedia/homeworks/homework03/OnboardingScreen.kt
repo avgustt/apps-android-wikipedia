@@ -1,34 +1,74 @@
 package org.wikipedia.homeworks.homework03
 
+import android.widget.FrameLayout
 import android.widget.ImageView
+import android.widget.LinearLayout
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.textview.MaterialTextView
+import com.google.android.material.tabs.TabLayout
 
-val wikiLogo = listOf(
-    ImageView::class.java,  //Класс
-    "main_toolbar_wordmark", //id
-    null, //нет текста
+val fragmentContainer = listOf(
+    FrameLayout::class.java,
+    "fragment_container"
 )
 
-val searchBottom = listOf(
-    ImageView::class.java,  //Класс
-    null,  //Нет ID
-    null, //нет текста
+val scrollViewContainer = listOf(
+    LinearLayout::class.java,
+    "scrollViewContainer"
 )
 
-
-
-val descriptionWikipedia = listOf(
-    MaterialTextView::class.java,   //Класс
-    "view_announcement_text", //id
-    "wikipedia_2024_review", //ID текста
+val imageViewCentered = listOf(
+    ImageView::class.java,
+    "imageViewCentered"
 )
 
-val moreRandomArticlesButton = listOf(
-    MaterialButton::class.java, // Класс
-    "view_featured_article_card_footer", // ID кнопки
-    "more_random_articles", // ID текста
+val primaryTextView = listOf(
+    org.wikipedia.views.AppTextView::class.java,
+    "primaryTextView",
+    "onboarding_welcome_title_v2"
 )
 
+val secondaryTextView = listOf(
+    org.wikipedia.views.AppTextView::class.java,
+    "secondaryTextView",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+)
 
+val languagesList = listOf(
+    androidx.recyclerview.widget.RecyclerView::class.java,
+    "languagesList"
+)
 
+val optionLabel = listOf(
+    org.wikipedia.views.AppTextView::class.java,
+    "option_label",
+    "English"
+)
+
+val addLanguageButton = listOf(
+    MaterialButton::class.java,
+    "addLanguageButton",
+    "onboarding_multilingual_add_language_text"
+)
+
+val scrollView = listOf(
+    androidx.core.widget.NestedScrollView::class.java,
+    "scrollView",
+)
+
+val skipButton = listOf(
+    MaterialButton::class.java,
+    "fragment_onboarding_skip_button",
+    "onboarding_skip"
+)
+
+val pageIndicator = listOf(
+    TabLayout::class.java,
+    "view_onboarding_page_indicator",
+    "onboarding_page"
+)
+
+val forwardButton = listOf(
+    MaterialButton::class.java,
+    "fragment_onboarding_forward_button",
+    "onboarding_continue"
+)
