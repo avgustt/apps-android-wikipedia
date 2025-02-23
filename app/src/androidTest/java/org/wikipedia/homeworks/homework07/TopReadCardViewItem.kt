@@ -1,7 +1,6 @@
 package org.wikipedia.homeworks.homework07
 
 import android.view.View
-import androidx.test.espresso.matcher.ViewMatchers.withId
 import io.github.kakaocup.kakao.image.KImageView
 import io.github.kakaocup.kakao.recycler.KRecyclerItem
 import io.github.kakaocup.kakao.recycler.KRecyclerView
