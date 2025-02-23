@@ -10,9 +10,6 @@ import org.hamcrest.Matcher
 import org.wikipedia.R
 
 class TopReadCardViewItem(matcher: Matcher<View>) : KRecyclerItem<TopReadCardViewItem> (matcher) {
-    class TopReadViewItem(
-        matcher: Matcher<View>
-    ) : KRecyclerItem<TopReadViewItem>(matcher) {
 
         val cardTopReadTitleTextView = KTextView(matcher) {
             withId(R.id.view_card_header_title)
@@ -32,4 +29,3 @@ class TopReadCardViewItem(matcher: Matcher<View>) : KRecyclerItem<TopReadCardVie
             }
         )
     }
-}
