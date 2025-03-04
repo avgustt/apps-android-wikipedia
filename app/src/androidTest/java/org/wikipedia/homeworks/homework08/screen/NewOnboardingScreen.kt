@@ -23,6 +23,7 @@ object NewOnboardingScreen : KScreen<NewOnboardingScreen>() {
     }
 
     val slider = KViewPager2(
+
         builder = { withId(R.id.fragment_pager) },
         itemTypeBuilder = { itemType(::OnboardingViewItem) }
     )

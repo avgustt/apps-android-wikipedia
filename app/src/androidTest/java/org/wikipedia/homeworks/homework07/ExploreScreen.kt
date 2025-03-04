@@ -22,8 +22,11 @@ object ExploreScreen : KScreen<ExploreScreen>() {
             itemType(::AnnounceCardViewItem)
             itemType(::DayHeaderCardViewItem)
             itemType(::TopReadCardViewItem)
+            itemType(::NewsCardViewItem)
         }
     )
 
-
+    val newsBlock = items.childWith<NewsCardViewItem> {
+        withDescendant { withText(R.string.view_card_news_title) }
+    }
 }
