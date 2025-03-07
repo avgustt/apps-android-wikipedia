@@ -17,7 +17,7 @@ class NewsCardViewItem(matcher: Matcher<View>) : KRecyclerItem<NewsCardViewItem>
 
     val images = KRecyclerView(
         matcher,
-        builder = { withId(R.id.horizontal_scroll_list_item_image) },
+        builder = { withId(R.id.news_cardview_recycler_view) },
         itemTypeBuilder = { itemType(::NewsItem) }
     )
 

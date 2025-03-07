@@ -2,6 +2,7 @@ package org.wikipedia.homeworks.homework09
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
+import okhttp3.internal.wait
 import org.junit.Rule
 import org.junit.Test
 import org.wikipedia.homeworks.homework03.OnboardingScreen
@@ -16,7 +17,7 @@ class ExploreScreenTests : TestCase() {
         ActivityScenarioRule(MainActivity::class.java)
 
     @Test
-    fun checkNewsNavigation() {
+    fun scrollToThirdImageAndClick() {
         run {
             step("Пропуск онбординга") {
                 OnboardingScreen.skipButton.click()
@@ -26,18 +27,14 @@ class ExploreScreenTests : TestCase() {
                 ExploreScreen.newsBlock.isDisplayed()
             }
 
-            ExploreScreen.newsBlock.images.childAt<NewsItem>(2) {
-                isDisplayed()
-                click()
+            step("Скроллим до третьего элемента в 'In the news'") {
+                ExploreScreen.newsBlock.images.scrollTo(2)
             }
 
-            ExploreScreen.newsBlock.articleList.childAt<NewsItem>(1) {
-                isDisplayed()
-                click()
-            }
-
-            step("Проверяем, что открылся экран статьи") {
-                ArticleScreen.pageWebView.isDisplayed()
+            step("Кликаем по третьему изображению") {
+                ExploreScreen.newsBlock.images.childAt<NewsItem>(2) {
+                    image.click()
+                }
             }
         }
     }

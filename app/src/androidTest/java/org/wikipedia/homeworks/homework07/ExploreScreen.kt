@@ -14,9 +14,7 @@ object ExploreScreen : KScreen<ExploreScreen>() {
     }
 
     val items = KRecyclerView(
-        builder = {
-            withId(R.id.feed_view)
-        },
+        builder = { withId(R.id.feed_view) },
         itemTypeBuilder = {
             itemType(::SearchCardViewItem)
             itemType(::AnnounceCardViewItem)
@@ -26,7 +24,9 @@ object ExploreScreen : KScreen<ExploreScreen>() {
         }
     )
 
-    val newsBlock = items.childWith<NewsCardViewItem> {
-        withDescendant { withText(R.string.view_card_news_title) }
+    val newsBlock by lazy {
+        items.childWith<NewsCardViewItem> {
+            withDescendant { withText(R.string.view_card_news_title) }
+        }
     }
 }
