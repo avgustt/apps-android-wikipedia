@@ -14,15 +14,15 @@ class NewsCardViewItem(matcher: Matcher<View>) : KRecyclerItem<NewsCardViewItem>
 
 
     val newsBlock  = KRecyclerView(
-        matcher,
+        parent = matcher,
         builder = { withId(R.id.news_cardview_recycler_view) },
         itemTypeBuilder = { itemType(::NewsItem) }
     )
 
 
-    val articles = KRecyclerView(
-        matcher,
-        builder = { withId(R.id.news_story_items_recyclerview) },
-        itemTypeBuilder = { itemType(::ArticleItem) }
-    )
+//    val articles = KRecyclerView(
+//        parent = matcher,
+//        builder = { withId(R.id.news_story_items_recyclerview) },
+//        itemTypeBuilder = { itemType(::ArticleItem) } )//
+
 }

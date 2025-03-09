@@ -7,5 +7,10 @@ import org.hamcrest.Matcher
 import org.wikipedia.R
 
 class ArticleItem(matcher: Matcher<View>) : KRecyclerItem<ArticleItem>(matcher) {
-    val title = KTextView(matcher) { withId(R.id.story_text_view) }
+
+    val title = KTextView(matcher) {
+        withId(R.id.story_text_view)
+    }
+
+
 }

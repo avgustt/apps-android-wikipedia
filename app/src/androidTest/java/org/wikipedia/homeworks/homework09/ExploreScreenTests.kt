@@ -2,8 +2,10 @@ package org.wikipedia.homeworks.homework09
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
+import io.github.kakaocup.kakao.recycler.KRecyclerView
 import org.junit.Rule
 import org.junit.Test
+import org.wikipedia.R
 import org.wikipedia.homeworks.homework03.OnboardingScreen
 import org.wikipedia.homeworks.homework07.ExploreScreen
 import org.wikipedia.homeworks.homework07.NewsCardViewItem
@@ -22,17 +24,37 @@ class ExploreScreenTests : TestCase() {
             step("Пропускаем онбординг") {
                 OnboardingScreen.skipButton.click()
             }
-
-            step("Скроллим к блоку 'In the news'") {
-                flakySafely {
-                    ExploreScreen.items.childWith<NewsItem> {
-                        withText("In the news")
+            ExploreScreen.items
+                .childWith<NewsCardViewItem> {
+                    withDescendant {
+                        withText(R.string.view_card_news_title)
                     }
-                }.perform { inTheNewsHeaderTitle.hasAnyText() }
+
+                }.perform {
+                    step("кликаем на третий элемент") {
+                        newsBlock.childAt<NewsItem>(2) {
+                            image.click()
+                        }
+                    }
+                }
+
+            step("кликаем на вторую статью") {
+                ArticlePageScreen.articleTitle.click()
+                }
+
+                step("проверка статьи") {
+                    ArticleScreen.pageWebView.isVisible()
+                }
             }
+
+
         }
+
     }
-}
+
+
+
+
 
 
 
