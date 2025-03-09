@@ -89,8 +89,8 @@ class DeviceTest: TestCase() {
         run {
             device.language.switchInApp(Locale.CHINA)
             Thread.sleep(3000)
-            OnboardingScreen.skipButton.hasText("跳过")
-            device.uiDevice.findObject(UiSelector().text("跳过")).isEnabled
+            OnboardingScreen.skipButton.hasText("300")
+            device.uiDevice.findObject(UiSelector().text("300")).isEnabled
         }
     }
 
