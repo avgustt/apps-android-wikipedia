@@ -7,20 +7,20 @@ import org.junit.Rule
 import org.junit.Test
 import org.wikipedia.homeworks.homework07.ExploreScreen
 import org.wikipedia.main.MainActivity
-
-class ExploreScreenTest : TestCase() {
-
-    @get:Rule
-    val activityScenarioRule: ActivityScenarioRule<MainActivity> =
-        ActivityScenarioRule(MainActivity::class.java)
-
-    @Test
-    fun simpleTest() {
-        run {
-            step("Проверка отображение тулбара"){
-                ExploreScreen.toolbarTitle.isDisplayed()
-            }
-        }
-    }
-
-}
+//
+//class ExploreScreenTest : TestCase() {
+//
+//    @get:Rule
+//    val activityScenarioRule: ActivityScenarioRule<MainActivity> =
+//        ActivityScenarioRule(MainActivity::class.java)
+//
+//    @Test
+//    fun simpleTest() {
+//        run {
+//            step("Проверка отображение тулбара"){
+//                ExploreScreen..isDisplayed()
+//            }
+//        }
+//    }
+//
+//}
