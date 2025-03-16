@@ -11,5 +11,4 @@ object ScrollForHomework13 : KScreen<ScrollForHomework13>() {
     val readArticleButton = KButton{
         withId(R.id.link_preview_primary_button)
     }
-
 }

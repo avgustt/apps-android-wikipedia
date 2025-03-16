@@ -7,5 +7,4 @@ import org.hamcrest.Matcher
 
 class ReferenceForHomework13(matcher: Matcher<View>) : KRecyclerItem<ReferenceForHomework13>(matcher) {
 
-
 }

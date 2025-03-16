@@ -12,6 +12,5 @@ class ForTest : TestCase(
         timeoutMs = 30000,
         allowedExceptions = FlakySafetyParams.defaultAllowedExceptions.plus(AmbiguousViewMatcherException::class.java)
     )
-
     }
 )

@@ -17,5 +17,4 @@ object ScreenForHomework13 : KScreen<ScreenForHomework13>() {
     val text = KTextView{
         withId(R.id.reference_text)
     }
-
 }

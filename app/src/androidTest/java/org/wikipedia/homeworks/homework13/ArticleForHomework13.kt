@@ -12,5 +12,4 @@ object ArticleForHomework13 : KScreen<ArticleForHomework13>() {
     val webView = KWebView {
         withId(R.id.page_web_view)
     }
-
 }
