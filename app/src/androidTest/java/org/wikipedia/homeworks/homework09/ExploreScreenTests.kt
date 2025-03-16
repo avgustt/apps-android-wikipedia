@@ -2,7 +2,6 @@ package org.wikipedia.homeworks.homework09
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
-import io.github.kakaocup.kakao.recycler.KRecyclerView
 import org.junit.Rule
 import org.junit.Test
 import org.wikipedia.R
@@ -21,8 +20,12 @@ class ExploreScreenTests : TestCase() {
     @Test
     fun inTheNewsTest() {
         run {
+
             step("Пропускаем онбординг") {
-                OnboardingScreen.skipButton.click()
+                flakySafely(50000) {
+                    OnboardingScreen.skipButton.click()
+                    ExploreScreen.toolbarTitle.isDisplayed()
+                }
             }
             ExploreScreen.items
                 .childWith<NewsCardViewItem> {
@@ -40,17 +43,17 @@ class ExploreScreenTests : TestCase() {
 
             step("кликаем на вторую статью") {
                 ArticlePageScreen.articleTitle.click()
-                }
-
-                step("проверка статьи") {
-                    ArticleScreen.pageWebView.isVisible()
-                }
             }
 
-
+            step("проверка статьи") {
+                ArticleScreen.pageWebView.isVisible()
+            }
         }
 
+
     }
+
+}
 
 
 

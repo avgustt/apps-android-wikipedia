@@ -2,6 +2,7 @@ package org.wikipedia.homeworks.homework09
 
 import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.common.views.KView
+import io.github.kakaocup.kakao.recycler.KRecyclerView
 import io.github.kakaocup.kakao.text.KTextView
 import org.wikipedia.R
 import org.wikipedia.page.PageActivity
