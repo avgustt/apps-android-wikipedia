@@ -11,4 +11,5 @@ object NewViewScreenForHomework13: KScreen<NewViewScreenForHomework13>() {
     val newWebView = KWebView {
         withId(R.id.page_web_view)
     }
+
 }
