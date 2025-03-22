@@ -10,6 +10,6 @@ object ArticleForHomework13 : KScreen<ArticleForHomework13>() {
     override val viewClass = null
 
     val webView = KWebView {
-        withId(R.id.page_web_view)
+        withId(R.id.view_wiki_article_card)
     }
 }

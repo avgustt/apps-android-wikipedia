@@ -5,11 +5,9 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import org.junit.Rule
 import org.junit.Test
-
 import org.wikipedia.homeworks.homework03.OnboardingScreen
 import org.wikipedia.homeworks.homework07.ExploreScreen
 import org.wikipedia.homeworks.homework07.NewsCardViewItem
-
 import org.wikipedia.main.MainActivity
 
 
