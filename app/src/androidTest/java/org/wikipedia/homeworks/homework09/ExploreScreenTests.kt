@@ -1,6 +1,8 @@
 package org.wikipedia.homeworks.homework09
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
+import com.kaspersky.components.alluresupport.withForcedAllureSupport
+import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import org.junit.Rule
 import org.junit.Test
@@ -11,7 +13,7 @@ import org.wikipedia.homeworks.homework07.NewsCardViewItem
 import org.wikipedia.homeworks.homework07.NewsItem
 import org.wikipedia.main.MainActivity
 
-class ExploreScreenTests : TestCase() {
+class ExploreScreenTests : TestCase(kaspressoBuilder = Kaspresso.Builder.withForcedAllureSupport()) {
 
     @get:Rule
     val activityScenarioRule: ActivityScenarioRule<MainActivity> =

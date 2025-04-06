@@ -1,6 +1,8 @@
 package org.wikipedia.homeworks.homework08
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
+import com.kaspersky.components.alluresupport.withForcedAllureSupport
+import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import org.junit.Rule
 import org.junit.Test
@@ -8,7 +10,7 @@ import org.wikipedia.homeworks.homework08.screen.NewOnboardingScreen
 import org.wikipedia.homeworks.homework08.screen.OnboardingViewItem
 import org.wikipedia.main.MainActivity
 
-class OnboardingTest : TestCase() {
+class OnboardingTest08 : TestCase(kaspressoBuilder = Kaspresso.Builder.withForcedAllureSupport()) {
 
     @get:Rule
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
