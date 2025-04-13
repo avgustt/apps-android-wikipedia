@@ -7,6 +7,8 @@ import io.github.kakaocup.kakao.recycler.KRecyclerView
 import io.github.kakaocup.kakao.text.KTextView
 import org.hamcrest.Matcher
 import org.wikipedia.R
+import org.wikipedia.homeworks.homework20.name
+import org.wikipedia.homeworks.homework20.withParent
 
 class TopReadCardViewItem(matcher: Matcher<View>) : KRecyclerItem<TopReadCardViewItem> (matcher) {
 
@@ -14,8 +16,10 @@ class TopReadCardViewItem(matcher: Matcher<View>) : KRecyclerItem<TopReadCardVie
             withId(R.id.view_card_header_title)
         }
 
-        val viewListCardHeaderMenu = KImageView(matcher) {
-            withId(R.id.view_list_card_header_menu)
+        val viewListCardHeaderMenu by lazy {
+            KImageView(matcher) {
+                withId(R.id.view_list_card_header_menu)
+                    }.name(withParent("Заголовок"))
         }
 
         val cardList = KRecyclerView(
