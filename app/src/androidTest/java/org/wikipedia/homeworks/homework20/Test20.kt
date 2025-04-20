@@ -31,14 +31,15 @@ class Test20 : TestCase(kaspressoBuilder = Kaspresso.Builder.withForcedAllureSup
                 isVisible(ExploreScreenNew.announcementContainer)
 
                 // Проверяем наличие текста у блока "Top read"
-                ExploreScreenNew.topReadItem(0) {
+                ExploreScreenNew.topReadItem(3) {
                     isVisible(viewCardHeaderTitle)
-                }
-
-                // Кликаем по иконке меню внутри Top read
-                ExploreScreenNew.topReadItem( 0) {
                     click(imageMenu)
                 }
+
+//                // Кликаем по иконке меню внутри Top read
+//                ExploreScreenNew.topReadItem( 3) {
+//                    click(imageMenu)
+//                }
 
                 // Рекламная пауза
                 paused(1000)

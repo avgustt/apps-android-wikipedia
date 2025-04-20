@@ -21,11 +21,7 @@ object ExploreScreen : KScreen<ExploreScreen>() {
         }
     )
 
-
-
     val toolbarTitle = KImageView {
         withId(R.id.main_toolbar_wordmark)
     }
-
-
 }
