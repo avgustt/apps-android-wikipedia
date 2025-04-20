@@ -3,6 +3,7 @@ package org.wikipedia.homeworks.homework22
 import org.wikipedia.R
 import org.wikipedia.homeworks.homework07.*
 
+
 fun ExploreScreen22.searchCard(block: SearchCardViewItem.() -> Unit) {
     items.invokeByID(
         targetIndex = 0,

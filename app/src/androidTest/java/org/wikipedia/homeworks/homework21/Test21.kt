@@ -10,6 +10,7 @@ import org.wikipedia.homeworks.homework08.screen.NewOnboardingScreen
 import org.wikipedia.homeworks.homework20.namedSteps
 import org.wikipedia.main.MainActivity
 
+
 class Test21 : TestCase(kaspressoBuilder = Kaspresso.Builder.withForcedAllureSupport()) {
 
     @get:Rule

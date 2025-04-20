@@ -7,6 +7,7 @@ import androidx.test.espresso.ViewAction
 import androidx.test.espresso.matcher.ViewMatchers
 import org.hamcrest.Matcher
 
+
 class ToggleCheckBoxAction : ViewAction {
     override fun getConstraints(): Matcher<View> = ViewMatchers.isAssignableFrom(View::class.java)
 

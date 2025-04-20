@@ -10,6 +10,7 @@ import org.wikipedia.homeworks.homework20.getName
 import org.wikipedia.homeworks.homework20.invokeAtIndex
 import org.wikipedia.homeworks.homework20.name
 
+
 object ExploreScreen22 : NamedKScreen<ExploreScreenNew>() {
     override val screenName = "Explore Screen"
     override val layoutId: Int? = null

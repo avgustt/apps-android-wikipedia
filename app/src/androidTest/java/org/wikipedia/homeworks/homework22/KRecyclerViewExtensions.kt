@@ -8,6 +8,7 @@ import org.wikipedia.homeworks.homework20.name
 import org.wikipedia.homeworks.homework20.withParent
 import kotlin.math.min
 
+
 inline fun <reified T : KRecyclerItem<*>> KRecyclerView.invokeByID(
     targetIndex: Int,
     targetID: Int,
