@@ -31,6 +31,16 @@ object ExploreScreen22 : NamedKScreen<ExploreScreenNew>() {
         }
     ).name(ExploreScreenNew.withParent("Список блоков"))
 
+    fun ExploreScreenNew.searchCardViewItem(function: SearchCardViewItem.() -> Unit) {
+        items.invokeByID<SearchCardViewItem>(
+            targetId = R.id.voice_search_button,
+            targetIndex = 1,
+            blockName = "Search block",
+            limiter = 5,
+            function = function
+        )
+    }
+
     fun topReadCard(index: Int, block: TopReadCardViewItem.() -> Unit) {
         items.invokeAtIndex(index, block)
     }
@@ -43,3 +53,5 @@ object ExploreScreen22 : NamedKScreen<ExploreScreenNew>() {
         items.invokeAtIndex(index, block)
     }
 }
+
+
