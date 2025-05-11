@@ -30,8 +30,8 @@ class SuccessfulTest : TestCase(
     fun successfulTest() {
         run {
             namedSteps {
-                click(OnboardingScreen.skipButton)
-                ExploreScreenNew.searchCardViewItem {
+                click(NewOnboardingScreen.skipButton)
+                ExploreScreen22.searchCardViewItem {
                     searchText.hasText("Search Wikipedia")
                 }
             }

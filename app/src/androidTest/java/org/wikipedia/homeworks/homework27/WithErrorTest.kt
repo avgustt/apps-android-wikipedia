@@ -29,8 +29,8 @@ class WithErrorTest  : TestCase(
     fun withErrorTest() {
         run {
             namedSteps {
-                click(OnboardingScreen.skipButton)
-                ExploreScreenNew.searchCardViewItem {
+                click(NewOnboardingScreen.skipButton)
+                ExploreScreen22.searchCardViewItem {
                     searchText.hasText("BLA-BLA-BLA")
                 }
             }
