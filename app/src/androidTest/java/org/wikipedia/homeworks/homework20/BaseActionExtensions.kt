@@ -4,7 +4,7 @@ import io.github.kakaocup.kakao.common.actions.BaseActions
 
 private val names = mutableMapOf<BaseActions, NameHierarchy>()
 
-fun <T : BaseActions> T.name(nameHierarchy: NameHierarchy): T {
+fun <T : BaseActions> T.setName(nameHierarchy: NameHierarchy): T {
     names[this] = nameHierarchy
     return this
 }
